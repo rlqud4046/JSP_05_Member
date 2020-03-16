@@ -70,7 +70,7 @@
 					} else {
 				%>
 
-				<td><%=cont.getTel()%></td>
+				<td><%=cont.getAddr()%></td>
 				<%
 					}
 				%>
@@ -85,7 +85,7 @@
 					} else {
 				%>
 
-				<td><%=cont.getTel()%></td>
+				<td><%=cont.getEmail()%></td>
 				<%
 					}
 				%>
@@ -100,19 +100,23 @@
 					} else {
 				%>
 
-				<td><%=cont.getTel()%></td>
+				<td><%=cont.getAge()%></td>
 				<%
 					}
 				%>
+
+
 			</tr>
+
 			<tr>
 				<th>가입일</th>
 				<td><%=cont.getReg_date()%></td>
 			</tr>
 
 			<tr>
-				<td colspan="2" align="right"><a
-					href="update.do?no=<%=cont.getId()%>">[수정]</a> <%-- <a href="delete.do?no=<%=cont.getBoard_no()%>">[삭제]</a>	--%>
+				<td colspan="2" align="right">
+				<a
+					href="update.do?memID=<%=cont.getId()%>">[수정]</a> <%-- <a href="delete.do?no=<%=cont.getBoard_no()%>">[삭제]</a>	--%>
 					<a href="board_delete.jsp?no=<%=cont.getId()%>">[삭제]</a> <%-- jsp로 바로 보내보자! --%>
 					<a href="select.do">[전체 목록]</a></td>
 			</tr>
